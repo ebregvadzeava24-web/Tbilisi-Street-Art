@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tbilisi Street Art</title>
+
+    <!-- Leaflet-ის სტილები -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- ჩვენი CSS ფაილი -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">TBILISI <span>STREET ART</span></div>
+        <p>Explore the city's open-air gallery</p>
+    </header>
+
+    <main class="main-container">
+
+        <!-- მარცხენა მხარე: რუკა -->
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+
+        <!-- მარჯვენა მხარე: ინფორმაცია -->
+        <aside class="sidebar">
+
+            <h2>Discover Street Art</h2>
+
+            <p class="intro">
+                აღმოაჩინე თბილისის ქუჩის ხელოვნება
+                და გაეცანი ქალაქის ურბანულ კულტურას.
+            </p>
+
+            <div id="place-info">
+                <h3>აირჩიე ნამუშევარი</h3>
+                <p>
+                    დააკლიკე რუკაზე არსებულ მარკერს,
+                    რომ გაიგო მეტი კონკრეტული ნამუშევრის შესახებ.
+                </p>
+            </div>
+
+            <!-- მარკერების ლეგენდა -->
+            <div class="legend">
+                <h3>Categories</h3>
+
+                <div class="legend-item">
+                    <span>🎨</span>
+                    <p>Central Tbilisi</p>
+                </div>
+
+                <div class="legend-item">
+                    <span>🖌️</span>
+                    <p>Saburtalo & Vake</p>
+                </div>
+
+                <div class="legend-item">
+                    <span>🧩</span>
+                    <p>Outer Districts</p>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- ჩვენი JavaScript ფაილი -->
+    <script src="script.js"></script>
+
+</body>
+</html>
